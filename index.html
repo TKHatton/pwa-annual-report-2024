@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PWA Annual Report 2024</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="hide-manus.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo"><img src="images/pwa-logo.png" alt="Positive Wellness Alliance Logo" class="logo-img"></a>
+                <ul class="nav-links">
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#hopwa">HOPWA</a></li>
+                    <li><a href="#ryanwhite">Ryan White</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://www.pwanc.org" class="btn-outline">Main Website</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1 class="hero-title">Positive Wellness Alliance</h1>
+            <h2 class="hero-subtitle">Annual Report 2024</h2>
+            <p class="hero-text">Providing comprehensive, caring, and compassionate supportive services for any and all persons struggling with long-term or chronic health conditions.</p>
+            <a href="#mission" class="btn-primary">Explore Report</a>
+        </div>
+    </section>
+
+    <section class="section" id="mission">
+        <div class="container">
+            <h2 class="section-title">Mission & Vision</h2>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <h3>Our Mission</h3>
+                    <p>In 2024, Positive Wellness Alliance (PWA) worked to eradicate stigma, while providing services, support, and community engagement to improve the quality of life for people living with and affected by HIV/AIDS. PWA is a non-profit that has existed for 30 years.</p>
+                    <p>2024 was a year of transition where PWA changed leadership, with a new Executive Director and significant turnover on the Board. Going into 2025 the mission statement has shifted to expand our services to serve more people.</p>
+                    <p class="highlight">In 2025, Positive Wellness Alliance will provide comprehensive, caring and compassionate supportive services for any and all persons struggling with long-term or chronic health conditions.</p>
+                </div>
+                <div class="vision-card">
+                    <h3>Our Vision</h3>
+                    <p>Our team will build a network and create an environment of support for all persons experiencing decreased quality of life due to long-term or chronic health challenges. This will include but not be limited to HIV/STIs, and other sexually transmitted infections, as well as communicable diseases such as hepatitis and tuberculosis.</p>
+                    <p>Additionally, we are expanding to non-communicable health challenges such as cancer, dementia, diabetes, mental health and addiction, pulmonary disease, and neurological conditions.</p>
+                </div>
+            </div>
+
+            <div class="activities-card">
+                <h3>PWA Activities Include:</h3>
+                <ul>
+                    <li>Linking clients to high quality services to help them increase their quality of life.</li>
+                    <li>Create partnerships with health providers providing services for a variety of health conditions to ensure knowledge of and access to quality healthcare.</li>
+                    <li>Support patients through a comprehensive case management model, support groups and preventive education.</li>
+                    <li>Increase awareness of the ongoing life challenges that people with long-term or chronic conditions may face, including but not limited to poverty, poor housing, lack of access to comprehensive healthcare including mental health, decreased family and community support and potential stigma.</li>
+                    <li>Model a comprehensive systems change model that is patient-centered, community based and relies on evidence-based practices.</li>
+                </ul>
+            </div>
+
+            <div class="abbreviations">
+                <h3>Abbreviations</h3>
+                <div class="abbreviations-grid">
+                    <div class="abbreviation" data-tippy-content="Acquired Immunodeficiency Syndrome">AIDS</div>
+                    <div class="abbreviation" data-tippy-content="Emergency Funding Assistance">EFA</div>
+                    <div class="abbreviation" data-tippy-content="Human Immunodeficiency Virus">HIV</div>
+                    <div class="abbreviation" data-tippy-content="Housing Opportunities for Persons with AIDS">HOPWA</div>
+                    <div class="abbreviation" data-tippy-content="Permanent Housing Placement">PHP</div>
+                    <div class="abbreviation" data-tippy-content="Short-term Rent, Mortgage and Utility">STRMU</div>
+                    <div class="abbreviation" data-tippy-content="Tenant Based Rental Assistance">TBRA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-alt" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Major Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievements-card">
+                    <h3>2024: A Year of Change</h3>
+                    <p>2024 has been a year of change for PWA and the clients we serve. A new Executive Director was hired and began mid-year. Many of the prior Board Members, having made significant contributions to PWA during the transition, rolled off the Board and new members were recruited.</p>
+                    <p>This change in leadership was only made possible with the dedication of the existing PWA staff members. Their commitment to providing case management and community services to people with HIV was exemplary and allowed services to continue with no interruption.</p>
+                    <p>With new leadership comes change such as consolidating three offices into one, committing to transparency inside PWA and with our partners, and tightening HR practices. Perhaps the most consequential change came in the way services are delivered. PWA case managers worked with clients to help them shift from a perspective of entitlement to a perspective of empowerment. This shift helped PWA to utilize limited grant funds more effectively, and clients to learn and develop life skills and self-reliance.</p>
+                </div>
+                <div class="chart-container">
+                    <canvas id="achievementsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Counties Served</h3>
+                    <div class="stat-value">8</div>
+                    <p>Providing services across Davidson, Davie, Forsyth, Iredell, Rowan, Surry, Stokes, and Yadkin Counties</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Assistance Calls</h3>
+                    <div class="stat-value">400+</div>
+                    <p>Received over 400 calls for assistance from people in the counties served</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Case Management</h3>
+                    <div class="stat-value">129</div>
+                    <p>People found eligible for case management services and assigned case managers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="hopwa">
+        <div class="container">
+            <h2 class="section-title">Housing Opportunities for Persons with AIDS (HOPWA)</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total HOPWA Funding Utilized</h3>
+                    <div class="stat-value">$494,785.64</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Clients Supported</h3>
+                    <div class="stat-value">212</div>
+                    <p><span class="tooltip-term" data-tippy-content="Unduplicated means each client is counted only once, regardless of how many services they received.">Unduplicated</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Support Per Client</h3>
+                    <div class="stat-value">$2,300</div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <p>During this funding year, PWA utilized $494,785.64 to support 212 clients (unduplicated) for an average of approximately $2300/client. This funding has historically stayed stable and has allowed PWA to help clients' secure safe housing which in turn is linked to higher compliance with healthcare treatment plans.</p>
+                <p>Under HOPWA funding, PWA ensures that more than 75% of clients adhere to a medical treatment plan with a goal of maintaining a safe viral load and thus will not transmit the virus to others.</p>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="hopwaChart"></canvas>
+            </div>
+
+            <div class="goal-card">
+                <h3>Goal for 2025:</h3>
+                <p>In 2025, PWA seeks to increase the provision of HOPWA grant funds from 70% going to client services to 80% going to client services and 20% for operational expenses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-alt" id="ryanwhite">
+        <div class="container">
+            <h2 class="section-title">Ryan White Program</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Total Ryan White Funding Utilized</h3>
+                    <div class="stat-value">$260,744.31</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Clients Supported</h3>
+                    <div class="stat-value">287</div>
+                    <p><span class="tooltip-term" data-tippy-content="Unduplicated means each client is counted only once, regardless of how many services they received.">Unduplicated</span></p>
+                </div>
+                <div class="stat-card">
+                    <h3>Average Support Per Client</h3>
+                    <div class="stat-value">$900</div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <p>PWA expended $260,744.31 to serve 287 unduplicated clients, for just over $900/client. Again, this funding has remained steady but is not expected to increase. The focus of this funding is to ensure that clients have access to health care and adhere to their treatment protocol.</p>
+                <p>Again, the goal is to reduce the numbers of persons with HIV that can transmit the virus to others. Adherence to treatment results in more than 75% of the clients with a non-transmissible viral load.</p>
+                <p>It should be noted that PWA undergoes an audit of client charts, financial files and other programmatic record keeping annually. In 2024, PWA received no programmatic recommendations and only one financial correction.</p>
+            </div>
+
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <canvas id="ryanWhiteChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+            </div>
+
+            <div class="goal-card">
+                <h3>Goal for 2025:</h3>
+                <p>In 2025, PWA seeks to increase the provision of Ryan White grant funds from 41% going to client services to 60% going to client services and 40% for operational expenses.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="communication">
+        <div class="container">
+            <h2 class="section-title">Communication</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Facebook Growth</h3>
+                    <div class="stat-value">15%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Instagram Growth</h3>
+                    <div class="stat-value">10%</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Media Outlets Coverage</h3>
+                    <div class="stat-value">15+</div>
+                </div>
+            </div>
+
+            <div class="communication-grid">
+                <div class="info-card">
+                    <h3>Social Media Growth</h3>
+                    <p>In 2024 PWA saw our Facebook and Instagram following grow. Our Facebook page grew by 15%, and our Instagram by 10%. Although engagement slightly dipped by an average of 5 percent across all platforms, this is not a cause for concern, but rather a reflection of strategy to focus more on quality content relevant to our audience and mission, versus previous years' strategies of quantity, likes, and comments, as the barometer of success.</p>
+                    <p>In 2024, PWA initiated a weekly "newsletter" disseminated on Thursday mornings with a focus on advocacy, education, community engagement, and people living with HIV. 2024 was the first step in curating more meaningful and relevant content.</p>
+                </div>
+                <div class="info-card accent">
+                    <h3>Media Relations</h3>
+                    <p>In regards to media relations, PWA was featured in local media for the first time since 2022. This happened due to our new Executive Director's arrival and the press release announcing. The news was picked up by The Salisbury Post and a feature one on one with The Lexington Dispatch.</p>
+                    <p>Both stories led to a placement by Yahoo! News and MSN News, subsequently leading to over 15 online media outlets covering her arrival.</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3>Goals for 2025:</h3>
+                <ul>
+                    <li>In 2025, PWA seeks to increase our social media following by 25%. And we will target an increase in engagement, with a target of 15%.</li>
+                    <li>In 2025, PWA will review and expand our website to reflect the new expanded mission and vision.</li>
+                    <li>In 2025, PWA will enhance the information platform via the "newsletter" format and formalizing other regular communication outreach.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-alt" id="events">
+        <div class="container">
+            <h2 class="section-title">Community Events & Fundraising</h2>
+            
+            <div class="info-card">
+                <p>In 2024, the PWA team met with, and attended, numerous local non-profit organizations and national organizational events to explore opportunities for change in the future. In addition, staff members individually engaged and attended events throughout our community.</p>
+                <p>Although we did not directly participate in as many events as 2023, the involvements in 2024 were more strategic, targeted, and aided in moving the organization forward. We attended events celebrating regional success, like the United Way of Davidson County's Campaign Celebration. We also attended events meeting those in need where they are, like events help by The Shepherd's House in Yadkin County.</p>
+                <p>We took a step forward in sponsorship as an organization, becoming a sponsor for PRIDE WS's annual PRIDE Parade and Food Truck Festival. The end of the year saw a successful introduction of our new Executive Director. During our event, An Evening of Compassion, we made known our renewed commitment to our community to partners, allies, and important figures in our community. Attendees included Winston-Salem Mayor, Allen Joines, NC General Assembly State Representative, Amber Baker, as well as WS/FCS Superintendent, Tricia McManus.</p>
+            </div>
+
+            <div class="timeline">
+                <h3>2024 Events Timeline</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 2024</div>
+                        <div class="timeline-content">
+                            <h4>Women and Girls HIV Awareness Day</h4>
+                            <p>Online auction and in-person art class with food provided by Providence Catering from Second Harvest Food Bank.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Summer 2024</div>
+                        <div class="timeline-content">
+                            <h4>PRIDE WS Sponsorship</h4>
+                            <p>PWA became a sponsor for PRIDE WS's annual PRIDE Parade and Food Truck Festival.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">November 2024</div>
+                        <div class="timeline-content">
+                            <h4>Thanksgiving Meal Program</h4>
+                            <p>Provided 10 randomly selected clients and their families with a full Thanksgiving dinner thanks to generous turkey donations.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 2024</div>
+                        <div class="timeline-content">
+                            <h4>Lowes Foods Partnership</h4>
+                            <p>Partnered with Lowes Foods to raise awareness and funds. Shoppers using a specific barcode donated a portion of their purchase to PWA.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 2024</div>
+                        <div class="timeline-content">
+                            <h4>Christmas Gift Program</h4>
+                            <p>Partnered with the Triad Softball League to deliver Christmas gifts to 52 families, individually selected and wrapped by league members.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 2024</div>
+                        <div class="timeline-content">
+                            <h4>Giving Tuesday & End of Year Campaign</h4>
+                            <p>Annual fundraising effort asking the community to help rewrite the story for PWA clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline">
+                <h3>2025 Planned Events</h3>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-date">January 2025</div>
+                        <div class="timeline-content">
+                            <h4>Thrive in 25 Campaign Launch</h4>
+                            <p>Monthly donation program asking people to make recurring donations of their choice to support PWA's expanded mission.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">February 2025</div>
+                        <div class="timeline-content">
+                            <h4>Community Health Forum</h4>
+                            <p>Educational event focused on chronic health conditions and available community resources.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 2025</div>
+                        <div class="timeline-content">
+                            <h4>Women and Girls Health Awareness Day</h4>
+                            <p>Expanded program focusing on women's health issues beyond HIV/AIDS.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 2025</div>
+                        <div class="timeline-content">
+                            <h4>Spring Fundraising Gala</h4>
+                            <p>Major fundraising event with silent auction, entertainment, and community recognition awards.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">June 2025</div>
+                        <div class="timeline-content">
+                            <h4>PRIDE Month Activities</h4>
+                            <p>Expanded participation in regional PRIDE events with educational outreach and testing services.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">September 2025</div>
+                        <div class="timeline-content">
+                            <h4>Community Health Fair</h4>
+                            <p>Collaborative event with healthcare partners offering screenings, education, and resources.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="goal-card">
+                <h3>Goal for 2025:</h3>
+                <p>PWA is focused on implementing a strategic approach to fundraising that incorporates planned giving, corporate sponsors, and grant funding. We begin with our Thrive in 25 campaign that asks people to make a monthly donation of their choice.</p>
+                <p>Each month we hope to have two events, 1) a purely fundraising opportunity and 2) a community engagement event that also serves to encourage donations.</p>
+                <p>In 2025 PWA will bring in additional $50,000 in grant funding. And is seeking to increase our individual donations from $2,750.00 to $10,000.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="financial">
+        <div class="container">
+            <h2 class="section-title">Financial Information</h2>
+            
+            <div class="info-card text-center">
+                <h3>2024 Financial Overview</h3>
+                <p>Detailed financial information is available upon request. PWA is committed to financial transparency and responsible stewardship of all funds.</p>
+                
+                <div class="request-box">
+                    <p>Please contact PWA at <a href="mailto:info@pwanc.org">info@pwanc.org</a> to request a detailed copy of the 2024 budget and audit.</p>
+                    <a href="mailto:info@pwanc.org?subject=Request%20for%202024%20Financial%20Information" class="btn-primary">Request Financial Information</a>
+                </div>
+            </div>
+
+            <div class="financial-grid">
+                <div class="info-card">
+                    <h3>Funding Sources</h3>
+                    <ul>
+                        <li>HOPWA grant funding disbursed and managed through the City of Winston-Salem</li>
+                        <li>Ryan White grant funding disbursed and managed through the State of North Carolina</li>
+                        <li>Individual donations and community support</li>
+                        <li>Fundraising events and campaigns</li>
+                        <li>Corporate partnerships and sponsorships</li>
+                    </ul>
+                </div>
+                <div class="goal-card">
+                    <h3>Financial Goals for 2025</h3>
+                    <ul>
+                        <li>Increase HOPWA grant allocation to client services from 70% to 80%</li>
+                        <li>Increase Ryan White grant allocation to client services from 41% to 60%</li>
+                        <li>Secure additional $50,000 in grant funding</li>
+                        <li>Increase individual donations from $2,750 to $10,000</li>
+                        <li>Implement "Thrive in 25" monthly donation program</li>
+                        <li>Develop corporate sponsorship program</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-alt" id="social">
+        <div class="container">
+            <h2 class="section-title">Connect With Us</h2>
+            
+            <div class="social-grid">
+                <div class="social-card facebook">
+                    <div class="social-header">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        <h3>Facebook</h3>
+                        <span>@positivewellnessalliance</span>
+                    </div>
+                    <div class="social-content">
+                        <div class="social-post">
+                            <p>PWA is excited to announce our new expanded mission to serve more people with chronic health conditions!</p>
+                            <div class="post-meta">
+                                <span>March 28, 2025</span>
+                                <div>
+                                    <span>45 Likes</span>
+                                    <span>12 Shares</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-post">
+                            <p>Thank you to everyone who attended our recent community health forum. Your participation helps us better serve our community.</p>
+                            <div class="post-meta">
+                                <span>March 15, 2025</span>
+                                <div>
+                                    <span>32 Likes</span>
+                                    <span>8 Shares</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <a href="https://www.facebook.com/positivewellnessalliance" target="_blank" rel="noopener noreferrer">View More on Facebook</a>
+                    </div>
+                </div>
+                
+                <div class="social-card instagram">
+                    <div class="social-header">
+                        <svg class="social-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        <h3>Instagram</h3>
+                        <span>@pwanc</span>
+                    </div>
+                    <div class="social-content">
+                        <div class="social-post">
+                            <p>Our Thrive in 25 campaign is off to a great start! Your monthly donations make a huge difference in the lives of those we serve.</p>
+                            <div class="post-meta">
+                                <span>March 5, 2025</span>
+                                <div>
+                                    <span>67 Likes</span>
+                                    <span>23 Shares</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-post">
+                            <p>PWA staff attended professional development training this week to better serve our clients with diverse health needs.</p>
+                            <div class="post-meta">
+                                <span>February 22, 2025</span>
+                                <div>
+                                    <span>28 Likes</span>
+                                    <span>5 Shares</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-footer">
+                        <a href="https://www.instagram.com/pwanc" target="_blank" rel="noopener noreferrer">View More on Instagram</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card text-center">
+                <h3>Stay Connected</h3>
+                <p>Follow us on social media to stay updated on our events, programs, and ways to get involved. Your support helps us continue our mission of providing comprehensive, caring, and compassionate supportive services for those in need.</p>
+                
+                <div class="social-buttons">
+                    <a href="https://www.facebook.com/positivewellnessalliance" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                        </svg>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/pwanc" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://www.twitter.com/pwanc" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24">
+                            <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                        </svg>
+                        Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="appreciation">
+        <div class="container">
+            <h2 class="section-title">Appreciation</h2>
+            
+            <div class="info-card">
+                <p>During this year of transition a number of people worked hard to ensure that PWA stayed open and continued to provide supportive services to clients in need. First, the PWA staff and Board that took the responsibility to keep the doors open and ensure that funds were ethically used in compliance with grant regulations.</p>
+                <p>Our appreciation extends to the major funding support, the City of Winston-Salem that manages and disburses the HOPWA grant to support housing, and the State of North Carolina that manages and disburses the Ryan White grant to support medical services for HIV+ persons.</p>
+                <p>Although, there was a small number of individual donors, PWA would like to thank each and every person that demonstrated their support for people living with HIV in their community. And, we are proud to share that our Board members are the majority of the individual contributions, not only do they donate their time and skills, but they also support with financial donations.</p>
+                <p>PWA is dedicated to supporting professional development for our staff and other people working with PWA. Two of our staff are currently enrolled in Social Work programs and are committed to getting higher degrees in conjunction with their work at PWA. And PWA is historically willing and able to support interns in public health and other higher education programs.</p>
+            </div>
+
+            <div class="thank-you">
+                <h3>Thank You For Your Support</h3>
+                <p class="animated-text">Together we are making a difference in our community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>We'd love to hear from you! If you have questions about our programs, want to volunteer, or are interested in supporting our mission, please reach out to us.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                            <div>
+                                <h4>Address</h4>
+                                <p>3504 #3 Vest Mill Road<br>Winston-Salem, NC, 27103</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>336-248-4646</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@pwanc.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="accessibility-features">
+        <h3>Accessibility Features</h3>
+        <ul>
+            <li>
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                    <h4>Keyboard Navigation</h4>
+                    <p>All interactive elements are accessible via keyboard navigation.</p>
+                </div>
+            </li>
+            <li>
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                    <h4>Screen Reader Compatibility</h4>
+                    <p>All content is structured to be compatible with screen readers.</p>
+                </div>
+            </li>
+            <li>
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                    <h4>Color Contrast</h4>
+                    <p>Text and background colors meet WCAG 2.1 AA standards for contrast.</p>
+                </div>
+            </li>
+            <li>
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                    <h4>Alternative Text</h4>
+                    <p>All images include descriptive alternative text.</p>
+                </div>
+            </li>
+            <li>
+                <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M5 13l4 4L19 7" />
+                </svg>
+                <div>
+                    <h4>Responsive Design</h4>
+                    <p>The website is fully responsive and works on all device sizes.</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>PWA</h2>
+                    <p>Positive Wellness Alliance</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#mission">Mission</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <li><a href="#hopwa">HOPWA</a></li>
+                        <li><a href="#ryanwhite">Ryan White</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>3504 #3 Vest Mill Road<br>Winston-Salem, NC, 27103</p>
+                    <p>Phone: 336-248-4646</p>
+                    <p>Email: info@pwanc.org</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/positivewellnessalliance" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/pwanc" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.twitter.com/pwanc" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723 10.054 10.054 0 01-3.127 1.184 4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Positive Wellness Alliance. All rights reserved.</p>
+                <p><a href="https://www.pwanc.org" target="_blank" rel="noopener noreferrer">Main Website</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M5 10l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </a>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
