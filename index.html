@@ -356,14 +356,30 @@
         <div class="container">
             <h2 class="section-title">Financial Information</h2>
             
-            <div class="info-card text-center">
-                <h3>2024 Financial Overview</h3>
-                <p>Detailed financial information is available upon request. PWA is committed to financial transparency and responsible stewardship of all funds.</p>
+            <div class="financial-overview-section" style="text-align: center; padding: 40px 20px; background-color: #f9f9f9; margin: 20px 0;">
+                <h2 style="margin-bottom: 20px; color: #333;">2023 Financial Overview</h2>
                 
-                <div class="request-box">
-                    <p>Please contact PWA at <a href="mailto:info@pwanc.org">info@pwanc.org</a> to request a detailed copy of the 2024 budget and audit.</p>
-                    <a href="mailto:info@pwanc.org?subject=Request%20for%202024%20Financial%20Information" class="btn-primary">Request Financial Information</a>
+                <p style="margin-bottom: 25px; max-width: 800px; margin-left: auto; margin-right: auto;">
+                    PWA is committed to financial transparency and responsible stewardship of all funds. 
+                    Our 2023 tax filing is available for immediate viewing below.
+                </p>
+                
+                <div style="background-color: #f5f5f5; border-radius: 8px; padding: 20px; max-width: 600px; margin: 0 auto;">
+                    <p style="margin-bottom: 20px;">
+                        <strong>Form 990 Tax Information (2023)</strong><br>
+                        Click the button below to view our full tax filing documentation.
+                    </p>
+                    
+                    <!-- Find the "Request Financial Information" button in your HTML and replace it with this: -->
+<button class="request-financial-btn" style="background-color: #b91c1c; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer;">View Financial Documents</button>
+                        View Tax Documents
+                    </button>
                 </div>
+                
+                <p style="margin-top: 25px; font-size: 14px;">
+                    For additional financial information, please contact us at 
+                    <a href="mailto:info@pwanc.org" style="color: #b91c1c; text-decoration: underline;">info@pwanc.org</a>
+                </p>
             </div>
 
             <div class="financial-grid">
@@ -699,5 +715,162 @@
     </a>
 
     <script src="scripts.js"></script>
+<!-- Add this code at the end of your HTML body, just before the closing </body> tag -->
+
+<!-- The Modal/Popup -->
+<div id="financialDocModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Positive Wellness Alliance Financial Information</h2>
+      <p>Form 990 - Tax Year 2023 (View Only)</p>
+      
+      <div class="document-controls">
+        <button id="zoomIn">Zoom In (+)</button>
+        <button id="zoomOut">Zoom Out (-)</button>
+        <button id="resetView">Reset View</button>
+      </div>
+      
+      <div class="document-container">
+        <div id="pdfViewer">
+          <!-- Embed your PDF here -->
+          <embed src="pwa-tax-form-2023.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- CSS for the modal -->
+  <style>
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 5% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 900px;
+    border-radius: 5px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .document-controls {
+    margin: 15px 0;
+  }
+  
+  .document-controls button {
+    background-color: #b91c1c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .document-controls button:hover {
+    background-color: #7f1d1d;
+  }
+  
+  .document-container {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    padding: 10px;
+    position: relative;
+    height: 600px;
+    overflow: auto;
+  }
+  
+  #pdfViewer {
+    transform-origin: top left;
+  }
+  </style>
+  
+  <!-- JavaScript for the modal functionality -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get the button that opens the modal
+    var btn = document.querySelector(".request-financial-btn");
+    
+    // Get the modal
+    var modal = document.getElementById("financialDocModal");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function(e) {
+      e.preventDefault(); // Prevent the default action
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    
+    // PDF Viewer zoom functionality
+    var pdfViewer = document.getElementById("pdfViewer");
+    var zoomIn = document.getElementById("zoomIn");
+    var zoomOut = document.getElementById("zoomOut");
+    var resetView = document.getElementById("resetView");
+    
+    // Set initial scale
+    var scale = 1;
+    
+    zoomIn.addEventListener("click", function() {
+      scale += 0.1;
+      pdfViewer.style.transform = "scale(" + scale + ")";
+    });
+    
+    zoomOut.addEventListener("click", function() {
+      if (scale > 0.5) {
+        scale -= 0.1;
+        pdfViewer.style.transform = "scale(" + scale + ")";
+      }
+    });
+    
+    resetView.addEventListener("click", function() {
+      scale = 1;
+      pdfViewer.style.transform = "scale(1)";
+      pdfViewer.style.transformOrigin = "top left";
+    });
+  });
+  </script>
+
 </body>
 </html>
